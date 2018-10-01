@@ -23,6 +23,10 @@ describe('<CommentBox />', () => {
     expect(wrapper.find('button')).toHaveLength(1)
   })
 
+  it('render CommentBox', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
+
   describe('textarea', () => {
     beforeEach(() => {
       // .simulate(event, mock)

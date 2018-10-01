@@ -19,4 +19,8 @@ describe('<Home />', () => {
   it('renders <CommentList />', () => {
     expect(wrapper.find(CommentList)).toHaveLength(1)
   })
+
+  it('render Home', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
 })

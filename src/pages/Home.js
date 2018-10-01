@@ -9,7 +9,6 @@ const Home = () => {
       <CommentBox />
       <CommentList />
     </div>
-
   )
 }
 
