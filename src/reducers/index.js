@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
 
+import commentsReducer from './comments'
+
 const rootReducer = combineReducers({
-  appState: {}
+  comments: commentsReducer
 })
 
 export default rootReducer

@@ -5,16 +5,18 @@ import Home from '../Home'
 import CommentBox from '../../components/CommentBox'
 import CommentList from '../../components/CommentList'
 
+let wrapper
+
+beforeEach(() => {
+  wrapper = shallow(<Home />)
+})
+
 describe('<Home />', () => {
   it('renders <CommentBox />', () => {
-    const wrapper = shallow(<Home />)
-
-    expect(wrapper.find(CommentBox).length).toEqual(1)
+    expect(wrapper.find(CommentBox)).toHaveLength(1)
   })
 
   it('renders <CommentList />', () => {
-    const wrapper = shallow(<Home />)
-
-    expect(wrapper.find(CommentList).length).toEqual(1)
+    expect(wrapper.find(CommentList)).toHaveLength(1)
   })
 })
